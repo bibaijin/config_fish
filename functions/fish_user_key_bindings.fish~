@@ -1,0 +1,5 @@
+function fish_user_key_bindings
+    bind \co ranger_cd
+    bind \cr 'echo "Hello world"'
+    bind \cl end-of-line
+end

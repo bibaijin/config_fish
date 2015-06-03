@@ -1,0 +1,12 @@
+function pandz --description 'Convert from Markdown to Dzslides by Pandoc'
+    if test (count $argv) -ne 1
+        echo "Error: too many or too few argments!"
+        echo "Hint: can only input 1 argument."
+        return 3
+    end
+    pandoc -t docx \
+    --bibliography=ref.bib \
+    -o (basename $argv .md).docx \
+    $argv
+end
+

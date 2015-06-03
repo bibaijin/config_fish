@@ -1,0 +1,4 @@
+# Persistently prepends directories to your PATH
+function add_to_path --description
+    set --universal fish_user_paths $fish_user_paths $argv
+end

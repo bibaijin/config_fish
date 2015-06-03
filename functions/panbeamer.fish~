@@ -1,0 +1,7 @@
+function panbeamer --description 'Convert from Markdown to Beamer by Pandoc'
+    whether_one_arg $argv
+    pandoc -t beamer --latex-engine=xelatex \
+    --template=$HOME/share/template/pandoc/beamer.tex \
+    -o (basename $argv .md)-beamer.pdf \
+    $argv
+end

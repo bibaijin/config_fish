@@ -1,0 +1,5 @@
+function decrypt --description 'Decpypt file'
+    whether_one_arg $argv
+    openssl aes-256-cbc -d -a -salt \
+    -in $argv -out (basename $argv .enc); and rm -f $argv
+end

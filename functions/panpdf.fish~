@@ -1,0 +1,7 @@
+function panpdf --description 'Convert from Markdown to Pdf by Pandoc'
+    whether_one_arg $argv
+    pandoc --latex-engine=xelatex \
+    --template=$HOME/share/template/pandoc/pdf.tex \
+    -o (basename $argv .md).pdf \
+    $argv
+end

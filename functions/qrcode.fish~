@@ -1,0 +1,4 @@
+function qrcode --description 'Generate QR code'
+    # not whether_one_arg $argv; and return 3
+    qrencode -s 12 -m 2 -o ~/tmp/qrcode.png $argv 
+end
