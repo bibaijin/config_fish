@@ -1,8 +1,7 @@
 # 环境变量
 set -x LC_CTYPE zh_CN.UTF-8
 set -x LC_COLLATE zh_CN.UTF-8
-add_to_path $HOME/bin /usr/local/bin $HOME/.cabal/bin $HOME/.gem/ruby/2.1.0/bin
-set -x PYTHONPATH /home/bibaijin/src/python/introduction_to_algorithms/ $PYTHONPATH
+add_to_path $HOME/bin /usr/local/bin $HOME/.cabal/bin
 set -x EDITOR vim
 
 # 插件
