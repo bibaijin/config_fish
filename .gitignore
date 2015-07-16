@@ -1,0 +1,4 @@
+fishd.*
+*.bak
+*.bak.*
+*_history
