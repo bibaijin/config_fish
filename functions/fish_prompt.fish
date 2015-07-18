@@ -43,7 +43,8 @@ function fish_prompt --description 'Write out the prompt'
             end
             echo -n "$USER@$__fish_prompt_hostname"
             echo -n "$__fish_prompt_cwd" (prompt_pwd) 
-            echo -n "$__fish_prompt_normal" '# '
+            echo "$__fish_prompt_normal"
+            echo -n '# '
         case '*'
             if not set -q __fish_prompt_cwd
                 set -g __fish_prompt_cwd (set_color $fish_color_cwd)
@@ -61,6 +62,8 @@ function fish_prompt --description 'Write out the prompt'
             if not test $last_status -eq 0
                 set_color $fish_color_error
             end
-            echo -n " [$last_status] \$ "
+            echo " [$last_status]"
+            set_color normal
+            echo -n "\$ "
     end
 end

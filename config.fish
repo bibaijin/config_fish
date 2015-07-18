@@ -88,3 +88,5 @@ if status --is-login
         exec startx
     end
 end
+# for vagrant
+cd /vagrant
