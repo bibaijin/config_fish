@@ -6,6 +6,7 @@ add_to_path $HOME/bin /usr/local/bin $HOME/.cabal/bin
 set -x PYTHONPATH /home/bibaijin/src/python/introduction_to_algorithms/ $PYTHONPATH
 set -x EDITOR vim
 set -x TERM screen-256color
+set -x GOPATH ~/Code/go
 
 # 插件
 # source ~/.config/fish/autojump.fish
