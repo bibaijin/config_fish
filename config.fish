@@ -1,15 +1,17 @@
 # 环境变量
 set -x LC_CTYPE zh_CN.UTF-8
 set -x LC_COLLATE zh_CN.UTF-8
-# add_to_path $HOME/bin /usr/local/bin $HOME/.cabal/bin $HOME/.gem/ruby/2.1.0/bin
-add_to_path $HOME/bin /usr/local/bin $HOME/.cabal/bin
-set -x PYTHONPATH /home/bibaijin/src/python/introduction_to_algorithms/ $PYTHONPATH
+add_to_path $HOME/bin /usr/local/bin $HOME/.cabal/bin $HOME/.gem/bin ~/Code/go/bin
+set -x PYTHONPATH $PYTHONPATH /home/bibaijin/Code/python
 set -x EDITOR vim
 set -x TERM screen-256color
 set -x GOPATH ~/Code/go
+set -x GEM_HOME $HOME/.gem
+set -x GEM_PATH $HOME/.gem
+set -x NODENAME bibaijin@localhost
 
 # 插件
-# source ~/.config/fish/autojump.fish
+source /usr/share/autojump/autojump.fish
 
 # ######################
 # Pacman alias examples
